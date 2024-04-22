@@ -1,9 +1,20 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Title</title>
-  </head>
-  <body>
-    <p>Paragraph</p>
-  </body>
+<head>
+  <title>Guess the Number Game</title>
+  <script src="./js/script.js"></script>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <h1>Guess the Number Game</h1>
+  <form action="javascript:checkGuess()">
+    <label for="guess">Enter your guess:</label>
+    <input type="number" id="userGuess" min="1" max="6">
+    <input type="submit" value="Guess">
+  </form>
+  <P id="guess">User Guess: </P>
+  <P id="answer">Computer generated number: </P>
+  <P id="result"></P>
+
+</body>
 </html>
