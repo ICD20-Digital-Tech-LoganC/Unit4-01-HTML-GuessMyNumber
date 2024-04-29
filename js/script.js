@@ -8,4 +8,7 @@ function checkGuess() {
   if (userGuess == randomNumber) {
     document.getElementById("result").textContent = "Congratulations! You guessed the correct number!";
   }
+  if (userGuess != randomNumber) {
+    document.getElementById("result").textContent = "You guessed the wrong number!";
+  }
 }
